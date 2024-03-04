@@ -21,9 +21,15 @@ import { VscGraph } from "react-icons/vsc";
 import { RiEqualizerFill } from "react-icons/ri";
 import { LuBadgePercent } from "react-icons/lu";
 import { TbClipboardList } from "react-icons/tb";
+import { useNavigate } from "react-router-dom";
+
 
 
 export const Sidebar = () => {
+
+    const navigate = useNavigate();
+    const handleClick = () => { navigate("../Dashboard") }
+
     return (
         <div className='Sidebar'>
             <div className="top">
@@ -36,7 +42,7 @@ export const Sidebar = () => {
                         <span> Switch Organization </span>
                         <GoChevronDown className="icon" />
                     </li>
-                    <li className='dashBoard'>
+                    <li onClick={handleClick} >
                         <FaHome className="icon" />
                         <span> Dashboard </span>
                     </li>
