@@ -72,6 +72,7 @@ const List = () => {
         setRowsPerPage(event.target.value);
         // setPage(0); // Reset to the first page
     };
+    
     const [anchorEl1, setAnchorEl1] = useState(null);
     const handleMenuOpen1 = (event, index) => {
         setAnchorEl1({ target: event.currentTarget, rowIndex: index });
@@ -81,6 +82,8 @@ const List = () => {
     };
     const open1 = Boolean(anchorEl1); // State to control dropdown visibility for the filtering
     const id1 = open1 ? 'simple-popover' : undefined;
+
+
     // rendering the component
     return (
         <div>
@@ -88,12 +91,7 @@ const List = () => {
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            {/* <TableCell className="tablecell">
-                                <span> ORGANIZATION </span>
-                                <LuListFilter className="filtericon"
-                                />
-                            </TableCell> */}
-                            <TableCell className="tablecell"> 
+                            <TableCell className="tablecell">
                                 <span> ORGANIZATION </span>
                                 <LuListFilter className="filtericon"
                                     onClick={(event) => handleMenuOpen1(event)}
@@ -154,33 +152,23 @@ const List = () => {
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> USERNAME </span>
-                                <LuListFilter className="filtericon" 
-                                    onClick={(event) => handleMenuOpen1(event)}
-                                />
+                                <LuListFilter className="filtericon" />
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> EMAIL </span>
-                                <LuListFilter className="filtericon" 
-                                onClick={(event) => handleMenuOpen1(event)}
-                                />
+                                <LuListFilter className="filtericon" />
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> PHONE NUMBER </span>
-                                <LuListFilter className="filtericon" 
-                                onClick={(event) => handleMenuOpen1(event)}
-                                />
+                                <LuListFilter className="filtericon" />
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> DATE JOINED </span>
-                                <LuListFilter className="filtericon" 
-                                onClick={(event) => handleMenuOpen1(event)}
-                                />
+                                <LuListFilter className="filtericon" />
                             </TableCell>
                             <TableCell className="tablecell">
                                 <span> STATUS </span>
-                                <LuListFilter className="filtericon" 
-                                onClick={(event) => handleMenuOpen1(event)}
-                                />
+                                <LuListFilter className="filtericon" />
                             </TableCell>
                         </TableRow>
                     </TableHead>

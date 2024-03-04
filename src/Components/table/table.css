@@ -1,65 +1,3 @@
-/* .table{
-    margin-top: 10px;
-    border: 1px solid #213F7D0F;
-}
-.table .tablecell{
-    font-size: 14px;
-    font-weight: 400;
-    color: #545F7D;
-}
-
-.drpDown{
-    width: 60px;
-    height: 25px;
-    margin-top: 20%;
-    margin-left: 80px;
-    position: absolute;
-}
-.shw{
-    position: absolute;
-    margin-top: 20%;
-}
-.footer{
-    position: absolute;
-}
-.numbr{
-    margin-top: -10%;
-    margin-left: 150px;
-}
-.pagination{
-    position: absolute;
-    margin-top: 2%;
-    margin-left: 54%;
-}
-.Users{
-    position: absolute;
-    font-size: 180%;
-    margin-top: -20%;
-    color:  #213F7D;
-    font-weight: 10px;
-}
-.dropDown{
-
-}
-
-.shw {
-    position: absolute;
-    margin-top: 3%;
-}
-
-.footer {
-    margin-top: 1%;
-    position: absolute;
-}
-
-.numbr {
-    position: fixed;
-    margin-top: -1.4%;
-    margin-left: 150px;
-} */
-
-
-
 .table {
     margin-top: -3%;
     border: 1px solid #213F7D0F;
@@ -101,13 +39,13 @@
     margin-left: 54%;
 }
 
-.Users {
+/* .Users {
     position: absolute;
     font-size: 180%;
     margin-top: -20%;
     color: #213F7D;
     font-weight: 10px;
-}
+} */
 
 .dropDown {}
 .status {
@@ -138,6 +76,7 @@
     background-color: rgb(255, 228, 225);
     color: #E4033B;
 }
+
 /* General Styles */
 MenuItem {
     height: 600px;

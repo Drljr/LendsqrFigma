@@ -15,7 +15,8 @@ return (
         <Sidebar />
         <div className="container">
         <Navbar />
-        <div className="UsersText">Users</div>
+        <div className="Users">Users</div>
+
         <div className="widget">
             <Widget type="USERS" />
             <Widget type="ACTIVE USERS" />

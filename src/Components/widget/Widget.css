@@ -1,4 +1,4 @@
-  .left {
+.left{
     /* margin-right: 20px; */
     margin-left: 35px;
     flex: 1;
@@ -12,11 +12,10 @@
     /* justify-content: space-between; */
     border-width: 0px, 0px, 0px, 0px;
     /* padding-left: 20px; */
-    box-shadow: -2px -5px 18px -8px rgb(192, 195, 195);
-    /* -webkit-box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1);
-    -moz-box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1); */
-    margin-top: 80px;
-  }
+    box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1);
+    -webkit-box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1);
+    -moz-box-shadow: -2px -5px 18px -8px rgba(33, 63, 125, 1);
+}
 .iconuser{
     color: #DF18FF;
     background-color: #d98be5;

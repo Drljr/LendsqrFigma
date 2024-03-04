@@ -20,16 +20,13 @@
 .Sidebar .center {
     padding-left: 20px;
 }
-
-.center {
+.center{
     position: absolute;
 }
-
-.dashBoard {
+.dashBoard{
     position: absolute;
     top: 90px;
 }
-
 .center ul {
     list-style: none;
     margin: 0;
@@ -43,7 +40,6 @@
     padding: 0;
     margin-top: 45px;
 }
-
 .center ul {
     list-style: none;
     margin: 0;
