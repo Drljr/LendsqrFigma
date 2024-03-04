@@ -4,7 +4,6 @@ import bg from '../Asssets/pablo-sign-in 1.png';
 import './Login.css';
 // import Dash from '../Dashboard/Dash.jsx';
 import { useState } from 'react';
-import axios from 'axios';// import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -12,34 +11,6 @@ import { useNavigate } from 'react-router-dom';
 export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState("");
-
-  async function hashPassword(password) {
-    // Implement your hashing logic here (e.g., using a library like bcrypt)
-    return password; // Replace with the actual hashed password
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const hashedPassword = await hashPassword(password); // Utilize a hashing library
-
-    try {
-      const response = await axios.post('/api/login', {
-        email,
-        password: hashedPassword
-      });
-
-      // Handle successful login (e.g., store token, redirect)
-      console.log('Login successful:', response.data);
-
-    } catch (error) {
-      // Handle login errors
-      console.error('Login error:', error);
-    }
-  };
-
-
-
 
   const [visible, setVisible] = useState(false);
   const handleVisible = () => { setVisible(!visible) }
@@ -53,7 +24,7 @@ export const Login = () => {
         <img src={bg} alt="bg" className="bg" />
       </div>
       <div className="Wrapper">
-        <form onSubmit={handleSubmit} className="form">
+        <form className="form">
           <h1>
             <b>Welcome!</b>
           </h1>
